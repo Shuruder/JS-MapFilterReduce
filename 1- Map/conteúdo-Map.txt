@@ -1,0 +1,40 @@
+O que é MAP?
+
+Um conjunto passa por uma operação e se transforma em outro conjunto
+
+(Mapping function)
+
+- Não altera o array original, cria um novo
+- Realiza as operações em ordem (i1 i2 i3 etc)
+
+
+Sintaxe:
+
+array.map(callback, thisArg)
+
+- callback: FUnção a ser executada em cada elemento
+    callback(item, index, array)~
+- thisArg(opcional): valor de this dentro da função de callback
+
+(não muito utilizado o this no mapeamento)
+
+(parametros do callback também opcionais com exceção do item)
+
+
+Map vs forEach o que muda?
+
+
+// Usando map
+
+const array = [1, 2, 3, 4, 5];
+
+array.map((item) => item *2); // retorno [2, 4, 6, 8, 10];
+
+// Usando forEach
+
+const array = [1, 2, 3, 4, 5];
+
+array.forEach((item) => item * 2); // retorno: undefined
+
+- valor de retorno
+- forEach precisa de uma constante para armazenar o valor

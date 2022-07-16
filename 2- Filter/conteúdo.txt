@@ -1,0 +1,26 @@
+Filter o que é?
+
+Como o nome diz, você coloca o array em um filtro
+onde apenas os itens que correspondem ao filtro
+serão retornados
+
+- cria um novo array
+- não modifica o array original
+
+
+Sintaxe:
+
+array.filter(callback, thisArg)
+
+(igual no Map)
+
+Exemplo:
+
+const frutas = ['maçã fuji', 'maçã verde', 'laranja', 'abacaxi'];
+
+frutas.filter((frutas) => fruta.includes('maçã'))
+
+// retorno: ['maçã fuji', 'maçã verde']; (novo array)
+// como esta lista se trata de strings, podemos usar metodos de string no filter
+// assim como se fosse uma lista numerica poderiamos usar metodos aritiméticos
+
